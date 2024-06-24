@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // 1. if{ } else{ } 문
+        var userNumber = prompt("숫자를 입력하세요.");
+
+        if(userNumber !== null){
+            if(userNumber%3==0){
+                alert("입력하신 숫자는 3의 배수가 맞습니다.");
+                }else{
+                    alert("입력하신 숫자는 3의 배수가 아닙니다.");
+                    }
+        }
+        else{ alert("다시 입력해주세요."); }
+
+        // 취소를 눌렀을때 "다시 입력해주세요"가 뜬다.
+
+        // // 2. 연산자
+        var numberOne = prompt("숫자를 입력하세요.");
+        var numberTwo = prompt("숫자를 입력하세요.");
+
+        if(numberOne !== null && numberTwo !== null){
+            if(numberOne < 10 || numberTwo < 10){
+                alert("둘 중이 하나가 10보다 작습니다.");
+            }
+            else{
+                alert("10보다 작은 숫자가 없습니다.");
+            }
+        }
+
+        // // 3. swich 문
+
+        var session = prompt(" 관심 번호를 선택해주요. 1.토마토 2.애플망고 3.메론");
+
+        // // 3-1. if, else 이용
+        if(session !== null){
+            if(session === "1"){
+                alert("토마토");
+            }
+            else if(session === "2"){
+                alert("애플망고");
+            }else if(session === "3"){
+                alert("메론");
+            }1
+        }else{alert("취소를 누르셨습니다.");}
+
+
+        // 3-2. switch 이용
+        switch(session){
+            case "1" : document.write("<p>토마토는 여성에게 좋습니다.</p>")
+                break;
+            case "2" : document.write("<p>애플망고는 혀에게 좋습니다.</p>")
+                break;
+            case "3" : document.write("<p>멜론은 기분이 좋습니다.</p>")
+                break;
+            default: alert("잘못입력했습니다.");
+        }
+        
+        // case 숫자 : 여기에는 값만 와야한다 반드시 큰따움표 잊지 않도록! "숫자"
+
+    </script>
+</body>
+</html>
